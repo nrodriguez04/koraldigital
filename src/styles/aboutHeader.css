@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgb(7, 7, 7);
+    background-image: url(C:\Users\lifea\OneDrive\Desktop\Development\koraldigital\src\assets\KoralAboutHeader.png);
+    background-size: 100% 900px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+
+  .header_content {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
+  
+  header .logo {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 304px;
+    margin-right: 170px;
+  }
+  
+  header .logo img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  
