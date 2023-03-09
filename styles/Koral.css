@@ -1,0 +1,49 @@
+.koral__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 250px;
+}
+
+
+img.diver__image {
+    width: 400px;
+    height: 404px;
+    margin-bottom: 80px;
+}
+
+.koral__about {
+    flex-direction: column;
+    padding: 30px;
+    width: 40%;
+}
+
+.koral__about p {
+    padding-top: 20px;
+}
+
+.koral__about button {
+    margin-top: 20px;
+}
+
+.koral__content button {
+    background: #fff;
+    border-radius:  12px;
+    padding: 15px 35px;
+    color: #1680AC;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    margin: 20px;
+  }
+
+.koral__content a {
+    text-decoration: none !important;
+    color: #1680AC;
+}
+
+.koral__members {
+    flex-direction: column;
+}

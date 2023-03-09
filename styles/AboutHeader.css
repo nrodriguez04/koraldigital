@@ -1,0 +1,114 @@
+.about-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.about-text h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+.cards-container {
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card h3 {
+  color: black;
+}
+
+.card svg {
+  font-size: 40px;
+}
+
+.card:hover {
+  border-color: #2696E9;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-text {
+    margin-bottom: 30px;
+  }
+  
+  .about-text h1 {
+    font-size: 60px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: none;
+  }
+}

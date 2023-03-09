@@ -1,0 +1,182 @@
+#intro {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 35px;
+  color: white;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.intro-content p {
+  flex: 1;
+  font-size: 18px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.intro-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#about-coral {
+  background-color: #F6F6F6;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.coral-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about-coral h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#about-coral p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about-coral ul {
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#about-coral li {
+  margin-bottom: 10px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.intro-content p {
+  flex: 1;
+  font-size: 18px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.coral-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#coral-reefs-disappearing {
+  background-color: #E1E1E1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#coral-reefs-disappearing h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#coral-reefs-disappearing p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#koral-digital {
+  background-color: #F6F6F6;
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#koral-digital h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#koral-digital p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #intro h1 {
+    font-size: 36px;
+  }
+  
+  .intro-content {
+    flex-direction: column;
+  }
+  
+  .intro-content p {
+    margin-top: 20px;
+  }
+  
+  .intro-image-container {
+    margin-top: 20px;
+  }
+  
+  #about-coral h2 {
+    font-size: 24px;
+  }
+  
+  #coral-reefs-disappearing h2 {
+    font-size: 24px;
+  }
+  
+  #koral-digital h2 {
+    font-size: 24px;
+  }
+  
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.serivce__page {
+    width: 100%;
+}
+
+.service__content {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.service__content .card {
+    width: 300px;
+  }

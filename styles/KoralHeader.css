@@ -1,0 +1,51 @@
+.koral-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .koral-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .koral-text {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  .koral-text h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .koral-text {
+      margin-bottom: 30px;
+    }
+    
+    .koral-text h1 {
+      font-size: 60px;
+    }
+  }

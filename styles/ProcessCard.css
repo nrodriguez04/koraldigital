@@ -1,0 +1,45 @@
+.process {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .process h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  h3.number {
+    color: #2696E9;
+  }
+  
+  .process p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  .process h5 {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  .process ul {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+  
+  .process li {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  

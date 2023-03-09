@@ -1,0 +1,319 @@
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 100%;
+  overflow: none;
+}
+
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 100vh;
+  background-color: white;
+}
+
+.section__text {
+  width: 50%;
+  color:#333;
+}
+
+.section__title {
+  font-size: 36px;
+  color:#333;
+  margin-bottom: 20px;
+}
+
+.section__subtitle {
+  font-size: 24px;
+  margin-left: 0;
+  color:#333;
+}
+
+.section__description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section__image-container {
+  width: 50%;
+  text-align: center;
+}
+
+.section__image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+}
+
+img.logo__image {
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+}
+
+.content__left h1 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 30px;;
+}
+
+h3 {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 25px;
+}
+
+.about_section p {
+  padding-bottom: 10px;
+  color:#333;
+}
+
+.content__left button {
+  background: #fff;
+  border-radius:  12px;
+  padding: 15px 35px;
+  color: #1680AC;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  margin: 20px;
+}
+
+.process_section {
+  height: 100vh;
+}
+
+.process__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.process {
+  margin: 20px;
+}
+
+.process:hover {
+  border-color: #2696E9;
+  cursor: pointer;
+}
+
+.service__content {
+  margin-left: 35px;
+}
+
+.service__content p{
+margin-left: 100px;
+}
+
+.service_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.service_section ul {
+  margin: 30px;
+}
+
+.service_section li {
+  color: white;
+}
+
+.services h4 {
+  color: white;
+}
+
+.thicc {
+  font-weight: bold;
+}
+
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 200px;
+  padding: 0;
+  max-width: 100vh;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.works h2 {
+  color: white;
+  padding: 20px;
+}
+
+.works h5{
+  color: white;
+}
+
+.contact-btn {
+  margin-top: 20px;
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+}
+
+.projects__container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.projects__container::-webkit-scrollbar-thumb {
+  background-color: #1680AC;
+  border-radius: 10px;
+}
+
+.projects__container::-webkit-scrollbar-thumb:hover {
+  background-color: #2696E9;
+}
+
+.procard__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 100%;
+  max-height: 800px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__content {
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 200px;
+  }
+
+  .about_section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .section__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .section__subtitle {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .section__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .section__image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .section__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .content__left h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .content__left button {
+    font-size: 1em;
+    padding: 12px 25px;
+    margin: 10px;
+  }
+
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .service_section {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .service__content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .service__content p {
+    margin-left: 0;
+  }
+
+  .process__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+  }
+
+  .works {
+    display: none;
+  }
+
+  .projects__container {
+    display: none;
+  }
+
+  .procard__container {
+    display: none;
+  }
+
+  .procard__container img {
+    display: none;
+  }
+
+  .procard__container h3 {
+    display: none;
+  }
+
+  .procard__container p {
+    display: none;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+}

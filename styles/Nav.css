@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');
+.nav {
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+    margin-bottom: 3rem;
+}
+
+nav.nav {
+    background-color: transparent;
+}
+
+.site-title {
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2rem;
+}
+
+img {
+    width: 6em;
+    height: 6em;
+    margin-top: 3rem;
+    padding: .5rem 0;
+}
+
+.nav-menu {
+    padding: 0 1rem;
+    padding-top: 1.2rem;
+    gap: 2rem;
+    margin-top: .7rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.nav li.active {
+    background-color: rgb(136, 135, 135);
+}
+
+.nav li:hover {
+    background-color: rgb(175, 171, 171);
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+    margin-top:  1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .nav-menu {
+        display: none;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: .3rem;
+        padding: .2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+        color: black;
+        top: -100vh;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .95);
+        transition: 0.3s;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .social-icons ul {
+        display: flex;
+        flex-direction: row !important;
+        padding: 1rem;
+    }
+
+    .social-icons a {
+        color: black;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+}

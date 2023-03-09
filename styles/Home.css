@@ -1,0 +1,126 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 100px 200px;
+}
+
+.main video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main:before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    background: rgba(3, 96, 251, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main .content {
+    z-index: 1;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.main .content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.main .content p {
+    margin-bottom: 65px;
+}
+
+.main .content button {
+    background: #fff;
+    border-radius:  12px;
+    padding: 15px 35px;
+    color: #1680AC;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+}
+
+div.content {
+    border-radius:  12px;
+    background: rgba(27, 109, 252, 0.1);
+    padding: 35px;
+    height: auto;
+    width: auto;
+}
+.main .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    top: 5em;
+}
+
+.main .media-icons a {
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.main .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main .media-icons a:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 100px 20px; 
+        height: 100%;
+    }
+
+    .main .content {
+        width: 90%;
+    }
+
+    .main .media-icons {
+        right: 15px;
+    }
+
+    .main .content h1 {
+        font-size: 3em;
+        line-height: 60px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .main .content p {
+        margin-bottom: 40px;
+    }
+
+    .main .content button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
